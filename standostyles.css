@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(17, 0, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: #e7e5e5;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 50px;
+}
+.header-outer{
+    position: static;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-color: #04010f;
+    align-items: center;
+    justify-content: center;
+}
+
+.pic-cl-container {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    flex-wrap: wrap;
+    padding-bottom: 50px; 
+    }
+.pic-cl {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 10px auto;
+    justify-content: space-between;
+    
+    
+}
+.illustration img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+.pic-1, .pic-2, .pic-3 {
+    align-items: center;
+    display: block;
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
+    border: 1px solid slategray;
+    
+    width: 350px;
+}
+p {
+    padding: 10px auto;
+    height: fit-content;
+    max-width: 300px;
+}
+
+    .footer {
+        margin-top: 100px;
+        height: 140px;
+        background-color: #04010f;
+        display: flex;
+        font-size: 36px;
+        color: white;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        justify-content: center;
+    }
+
+
+a:link {
+    color: #e7e5e5;
+    text-decoration: none;
+}
+a:visited {
+    color:#e7e5e5;
+    text-decoration: none;
+}
+a:hover {
+    color: aqua;
+    text-decoration: none;
+}
+a:active {
+    color: red;
+}
+a:visited:hover {
+    color: orange;
+}
+a:visited:active {
+    color: red;    
+}
+p:last-of-type {
+    margin-bottom: 50px;
+}
+/* Макет для мобильных */
+@media only screen and (max-width: 500px) {
+    body {
+      background-color: #7329fd; 
+    }
+    .pic-cl {
+        flex-direction: column;
+    }
+  }
